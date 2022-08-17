@@ -22,7 +22,7 @@ namespace ExercicioDictionary
         {
             Dictionary<char, int> vowelsDictionary = new Dictionary<char, int>();
             Services.ResetDictionary(vowelsDictionary);
-            Services.GetVowels(vowelsDictionary, txbInput.Text);
+            Services.GetVowels(vowelsDictionary, txbInput.Text.ToLower());
             
             foreach (var item in vowelsDictionary)
             {
